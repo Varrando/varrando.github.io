@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../../evs-player/styles/default.css"/>
+        <link rel="stylesheet" type="text/css" href="../../varrando-player/styles/default.css"/>
         <!--<script type="text/javascript" src="//s0.2mdn.net/instream/html5/ima3.js"></script>-->
 		<script type="text/javascript" src="http://content.jwplatform.com/libraries/V6NfEzT7.js"></script>
-        <script type="text/javascript" src="../../evs-player/evsplayer.min.js"></script>
-        <title>Allow Multiple Ads Demo</title>
+        <script type="text/javascript" src="../../varrando-player/varrandoplayer.min.js"></script>
+        <title>Infinite Loop Demo</title>
         <style type="text/css">
 			body {
 				padding: 10px;
@@ -44,8 +44,7 @@
 		</div>
 
         <script type="text/javascript">
-			window.evsPlayer || (window.evsPlayer = {});
-            //window.evsPlayer.LogToConsole = true;
+			window.varrandoPlayer || (window.varrandoPlayer = {});
 			window.onload = onLoad;
 			//vast tag
 			var TAG = "./wrapper.xml";
@@ -64,17 +63,13 @@
 					controls: true,
 					fullscreen: true,
 					share: ['f', 't', 'i'],
-					debug: true,
+					debug: false,
 					ga: false,
 					playlist: 'http://content.jwplatform.com/feeds/13ShtP5m.rss',
-					playerSwf: 'http://cdn.staging.vexigo.evs.io/player/swf/FlashPlayback.swf',
+					playerSwf: '../../varrando-player/swf/FlashPlayback.swf',
 					playerSwfTimeout: 5000,
 					tagId: '123',
 					playerId: '123',
-					style: {
-						url: 'http://cdn.player.local/hplayer/dist/skins/evs.css',
-						embed: ''
-					}
 				};
 
 				var adsOptions = {
@@ -93,7 +88,7 @@
 				
 				playerOptions.ads = adsOptions;
 
-				var player = evsPlayer.setup("varrandoPlayer", playerOptions);
+				var player = varrandoPlayer.setup("varrandoPlayer", playerOptions);
 				player.on('ready', function () {
 					console.log('HTML Player Ready');
 				});
