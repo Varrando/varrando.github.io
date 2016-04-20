@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <VAST version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast3_draft.xsd">
-  <Ad id="midroll-1" sequence="2">
+  <Ad id="midroll-1" sequence="1">
     <Wrapper>
       <AdSystem version="2.0">JW Player</AdSystem>
       <VASTAdTagURI><![CDATA[./test_cpmf1/wrapper1.xml]]></VASTAdTagURI>
@@ -9,7 +9,7 @@
       <Impression>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Impression>
    </Wrapper>
   </Ad>
-  <Ad id="midroll-2" sequence="1">
+  <Ad id="midroll-2" sequence="2">
    <InLine>
     <AdSystem>Acudeo Compatible</AdSystem>
     <AdTitle>VAST 2.0 Instream Test 1</AdTitle>

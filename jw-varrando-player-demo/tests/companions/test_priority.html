@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../../evs-player/styles/default.css"/>
+        <link rel="stylesheet" type="text/css" href="../../varrando-player/styles/default.css"/>
         <!--<script type="text/javascript" src="//s0.2mdn.net/instream/html5/ima3.js"></script>-->
 		<script type="text/javascript" src="http://content.jwplatform.com/libraries/V6NfEzT7.js"></script>
-        <script type="text/javascript" src="../../evs-player/evsplayer.min.js"></script>
-        <title>Player Demo</title>
+        <script type="text/javascript" src="../../varrando-player/varrandoplayer.min.js"></script>
+        <title>Test Companions Priority Demo</title>
         <style type="text/css">
+			body {
+				padding: 10px;
+			}
 			.wrapper { 
 				border: 2px solid black; 
 				display:inline-block; 
@@ -14,6 +17,10 @@
 				min-width: 750px;
 				vertical-align:top;
 				padding: 10px;
+				text-align: center;
+			}
+			#varrandoPlayer, #jwPlayer {
+				margin: 0px auto;
 			}
 			.companionWrapper { 
 				width: 730px; 
@@ -23,13 +30,13 @@
 				border: 1px #dddddd dashed; 
 				float:left;
 			}
+			
         </style>
     </head>
     <body>
-		<div id="varrandoPlayer" class="wrapper">
+		<div id="varrando" class="wrapper">
 			<header>Varrando Player</header>
-			<div id="videocontainer"></div>
-
+			<div id="varrandoPlayer" class="centered"></div>
 			<div class="companionWrapper">
 				<!-- leader-board -->
 				<div id="slot728x90" style="width: 728px; height:90px;" class="companion"></div>
@@ -41,9 +48,9 @@
 				<div id="slot320x50" style="width: 320px; height: 50px;" class="companion"></div> 
 			</div>
 		</div>
-		<div id="jwPlayer" class="wrapper">
+		<div id="jw" class="wrapper">
 			<header>JW Player</header>
-			<div id="my-video"></div>
+			<div id="jwPlayer" class="centered"></div>
 			<div class="companionWrapper">
 				<div class="companion" id="slot1" style="width:728px; height:90px;">&nbsp;</div>
 				<div class="companion" id="slot2" style="width:160px; height:600px;">&nbsp;</div>
@@ -52,86 +59,77 @@
 			</div>
 		</div>
 
-        <script>
-            window.evsPlayer || (window.evsPlayer = {});
-            window.evsPlayer.LogToConsole = true;
-        </script>
         <script type="text/javascript">
-            var playerOptions = {
-                autoplay: true,
-                autoplayNext: true,
-                loops: 2,
-                volume: 0,
-                muted: false,
-                width: "500px",
-                height: "232px",
-                preload: "auto",
-                controls: true,
-                fullscreen: true,
-                share: ['f', 't', 'i'],
-                debug: true,
-                ga: false,
-                playlist: 'http://content.jwplatform.com/feeds/13ShtP5m.rss',
-                playerSwf: 'http://cdn.staging.vexigo.evs.io/player/swf/FlashPlayback.swf',
-                playerSwfTimeout: 5000,
-//                murl: "stats.epo.evs.io",
-                tagId: '123',
-                playerId: '123',
-                style: {
-                    url: 'http://cdn.player.local/hplayer/dist/skins/evs.css',
-                    embed: ''
-                }
-            };
-
-            var adsOptions = {
-                timeout: 5000,
-                postrollTimeout: 3000,
-                preload: false,
-                preloadPreroll: false,
-                debug: true,
-                adBreaks: [{
-                        time: '0',
-                        tag: {
-                            url: './test_priority/wrapper1.xml'
-                        }
-                    }]
-            };
-
-
-            //adsOptions.adBreaks = adBreaks;
-            playerOptions.ads = adsOptions;
-
-            var player = evsPlayer.setup("videocontainer", playerOptions);
-            player.on('ready', function () {
-                console.log('HTML Player Ready');
-            });
-
-            player.defineSlot('slot728x90', 728, 90);
-            player.defineSlot('slot300x250', 300, 250);
-            player.defineSlot('slot320x50', 320, 50);
-            player.defineSlot('slot160x600', 160, 600);
+			window.varrandoPlayer || (window.varrandoPlayer = {});
+			window.onload = onLoad;
+			//vast tag
+			var TAG = "./test_priority/wrapper1.xml";
 			
 			function onLoad() {
-				//vast tag
-				var TAG = "./test_priority/wrapper1.xml";
-				
-				//html5 / flash
-				var platform = "flash";
-				
-				var playerInstance = jwplayer("my-video").setup({
-				 file: "http://content.jwplatform.com/videos/Wf8BfcSt-kNspJqnJ.mp4",
-				 image: "http://content.jwplatform.com/thumbs/Wf8BfcSt-640.jpg",
-				 width: "500",
-				 height: "232",
-				 primary: platform,
-				 autostart: "true",
-				 mute: "true",
-				 advertising: { 
-				  client: "vast",
-				  schedule: {"myAds":{"offset":"pre","tag":TAG}}
-				  }
-				});
+				//Varrando player
+				var playerOptions = {
+					autoplay: false,
+					autoplayNext: true,
+					loops: 2,
+					volume: 0,
+					muted: true,
+					width: "500px",
+					height: "232px",
+					preload: "auto",
+					controls: true,
+					fullscreen: true,
+					share: ['f', 't', 'i'],
+					debug: false,
+					ga: false,
+					playlist: 'http://content.jwplatform.com/feeds/13ShtP5m.rss',
+					playerSwf: '../../varrando-player/swf/FlashPlayback.swf',
+					playerSwfTimeout: 5000,
+					tagId: '123',
+					playerId: '123',
+				};
 
+				var adsOptions = {
+					timeout: 5000,
+					postrollTimeout: 3000,
+					preload: false,
+					preloadPreroll: false,
+					debug: true,
+					adBreaks: [{
+							time: '0',
+							tag: {
+								url: TAG
+							}
+						}]
+				};
+				
+				playerOptions.ads = adsOptions;
+
+				var player = varrandoPlayer.setup("varrandoPlayer", playerOptions);
+				player.on('ready', function () {
+					console.log('HTML Player Ready');
+				});
+				player.defineSlot('slot728x90', 728, 90);
+				player.defineSlot('slot300x250', 300, 250);
+				player.defineSlot('slot320x50', 320, 50);
+				player.defineSlot('slot160x600', 160, 600);
+				
+				//JW Player
+				var platform = "flash"; 	//html5 || flash
+				
+				var playerInstance = jwplayer("jwPlayer").setup({
+					file: "http://content.jwplatform.com/videos/Wf8BfcSt-kNspJqnJ.mp4",
+					image: "http://content.jwplatform.com/thumbs/Wf8BfcSt-640.jpg",
+					width: "500",
+					height: "232",
+					primary: platform,
+					autostart: "true",
+					mute: "true",
+					advertising: { 
+						client: "vast",
+						schedule: {"myAds":{"offset":"pre","tag":TAG}}
+					  }
+					});
+					
 				playerInstance.on('adCompanions', function(event) {
 				  for(var i = 0; i < event.companions.length; i++) {
 					var entry = event.companions[i];
@@ -153,9 +151,8 @@
 				  div.style.backgroundRepeat = "no-repeat";
 				  div.style.backgroundSize = "cover";
 				}
-			}
 				
-			window.onload = onLoad;
+				}
         </script>
     </body>
 </html>
