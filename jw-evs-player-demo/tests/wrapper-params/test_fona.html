@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../../evs-player/styles/default.css"/>
+        <!--<script type="text/javascript" src="//s0.2mdn.net/instream/html5/ima3.js"></script>-->
+		<script type="text/javascript" src="http://content.jwplatform.com/libraries/V6NfEzT7.js"></script>
+        <script type="text/javascript" src="../../evs-player/evsplayer.min.js"></script>
+        <title>Follow Additional Wrappers Demo</title>
+        <style type="text/css">
+			.wrapper { 
+				border: 2px solid black; 
+				display:inline-block; 
+				width: 45%;
+				min-width: 750px;
+				vertical-align:top;
+				padding: 10px;
+			}
+			.companionWrapper { 
+				width: 730px; 
+				margin-top: 10px;
+			}
+            .companion {
+				border: 1px #dddddd dashed; 
+				float:left;
+			}
+			
+        </style>
+    </head>
+    <body>
+		<div id="varrandoPlayer" class="wrapper">
+			<header>Varrando Player</header>
+			<div id="videocontainer"></div>
+		</div>
+		<div id="jwPlayer" class="wrapper">
+			<header>JW Player</header>
+			<div id="my-video"></div>
+		</div>
+
+        <script>
+            window.evsPlayer || (window.evsPlayer = {});
+            window.evsPlayer.LogToConsole = true;
+        </script>
+        <script type="text/javascript">
+            var playerOptions = {
+                autoplay: false,
+                autoplayNext: true,
+                loops: 2,
+                volume: 0,
+                muted: false,
+                width: "500px",
+                height: "232px",
+                preload: "auto",
+                controls: true,
+                fullscreen: true,
+                share: ['f', 't', 'i'],
+                debug: true,
+                ga: false,
+                playlist: 'http://content.jwplatform.com/feeds/13ShtP5m.rss',
+                playerSwf: 'http://cdn.staging.vexigo.evs.io/player/swf/FlashPlayback.swf',
+                playerSwfTimeout: 5000,
+//                murl: "stats.epo.evs.io",
+                tagId: '123',
+                playerId: '123',
+                style: {
+                    url: 'http://cdn.player.local/hplayer/dist/skins/evs.css',
+                    embed: ''
+                }
+            };
+
+            var adsOptions = {
+                timeout: 5000,
+                postrollTimeout: 3000,
+                preload: false,
+                preloadPreroll: false,
+                debug: true,
+                adBreaks: [{
+                        time: '0',
+                        tag: {
+                            url: './test_fona/wrapper1.xml'
+                        }
+                    }]
+            };
+
+
+            //adsOptions.adBreaks = adBreaks;
+            playerOptions.ads = adsOptions;
+
+            var player = evsPlayer.setup("videocontainer", playerOptions);
+            player.on('ready', function () {
+                console.log('HTML Player Ready');
+            });
+			
+			function onLoad() {
+				//vast tag
+				var TAG = "./test_fona/wrapper1.xml";
+				
+				//html5 / flash
+				var platform = "flash";
+				
+				var playerInstance = jwplayer("my-video").setup({
+				 file: "http://content.jwplatform.com/videos/Wf8BfcSt-kNspJqnJ.mp4",
+				 image: "http://content.jwplatform.com/thumbs/Wf8BfcSt-640.jpg",
+				 width: "500",
+				 height: "232",
+				 primary: platform,
+				 autostart: "true",
+				 advertising: { 
+				  client: "vast",
+				  schedule: {"myAds":{"offset":"pre","tag":TAG}}
+				  }
+				});
+			}
+				
+			window.onload = onLoad;
+        </script>
+    </body>
+</html>
