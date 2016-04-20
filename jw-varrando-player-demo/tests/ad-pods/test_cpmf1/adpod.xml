@@ -30,15 +30,6 @@
       </MediaFiles>
      </Linear>
     </Creative>
-	<Creative sequence="1">
-		<CompanionAds>
-			<Companion height="250" width="300" id="medium_rectangle">
-				<HTMLResource>
-					<![CDATA[<a href="http://www.lkqd.com/" border="0" target="_blank"><img style="border:0; width:300px; height:250px;" src="http://ad.lkqd.net/serve/87123789f4ede3dcb692a277cff145ad.jpg"/></a>]]>
-				</HTMLResource>
-			</Companion>
-		</CompanionAds>
-	</Creative>
    </Creatives>
    <Extensions>
    </Extensions>
