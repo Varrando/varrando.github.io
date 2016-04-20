@@ -1,106 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../../varrando-player/styles/default.css"/>
-        <!--<script type="text/javascript" src="//s0.2mdn.net/instream/html5/ima3.js"></script>-->
 		<script type="text/javascript" src="https://content.jwplatform.com/libraries/V6NfEzT7.js"></script>
-        <script type="text/javascript" src="../../varrando-player/varrandoplayer.min.js"></script>
         <title>Cross Platform Media Files Demo 2</title>
-        <style type="text/css">
-			body {
-				padding: 10px;
-			}
-			.wrapper { 
-				border: 2px solid black; 
-				display:inline-block; 
-				width: 45%;
-				min-width: 750px;
-				vertical-align:top;
-				padding: 10px;
-				text-align: center;
-			}
-			#varrandoPlayer, #jwPlayer {
-				margin: 0px auto;
-			}
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-		<div id="varrando" class="wrapper">
-			<header>Varrando Player</header>
-			<div id="varrandoPlayer" class="centered"></div>
+		<div id="varrando" class="varrando-wrapper">
+			<header>Varrando Player: displays the second Media MP4 File Ad</header>
+			<div id="varrandoPlayer" class="centered">
+				<script src="//content.varrando.com/embed/supply/qMpZfxIudn.js" id="qMpZfxIudn" async></script>
+			</div>
 		</div>
-		<div id="jw" class="wrapper">
-			<header>JW Player</header>
-			<div id="jwPlayer" class="centered"></div>
+
+		<div id="jw-flash" class="wrapper">
+			<header>JW Player Flash Tech: No Ads Played Whatsoever!</header>
+			<div id="jwPlayer-flash" class="centered"></div>
 		</div>
+
+		<div id="jw-html" class="wrapper">
+			<header>JW Player HTML5 Tech: Should play at least Ad 1!</header>
+			<div id="jwPlayer-html" class="centered"></div>
+		</div>
+		
 
         <script type="text/javascript">
-			window.varrandoPlayer || (window.varrandoPlayer = {});
 			window.onload = onLoad;
+
 			//vast tag
-			var TAG = "./test_cpmf2/adpod.xml";
+			var TAG = "https://varrando.github.io/jw-varrando-player-demo/tests/ad-pods/test_cpmf2/inline.xml";
 			
 			function onLoad() {
-				//Varrando player
-				var playerOptions = {
-					autoplay: false,
-					autoplayNext: true,
-					loops: 2,
-					volume: 0,
-					muted: true,
-					width: "500px",
-					height: "232px",
-					preload: "auto",
-					controls: true,
-					fullscreen: true,
-					share: ['f', 't', 'i'],
-					debug: false,
-					ga: false,
-					playlist: 'https://content.jwplatform.com/feeds/13ShtP5m.rss',
-					playerSwf: '../../varrando-player/swf/FlashPlayback.swf',
-					playerSwfTimeout: 5000,
-					tagId: '123',
-					playerId: '123',
-				};
+					//JW Player
+					var options = {
+						file: "videos/fashion.mp4",
+						image: "https://content.jwplatform.com/thumbs/Wf8BfcSt-640.jpg",
+						width: "500",
+						height: "232",
+						primary: "html5",
+						autostart: "true",
+						mute: "true",
+						advertising: { 
+							client: "vast",
+							schedule: {"myAds":{"offset":"pre","tag":TAG}}
+						  }
+						};
 
-				var adsOptions = {
-					timeout: 5000,
-					postrollTimeout: 3000,
-					preload: false,
-					preloadPreroll: false,
-					debug: true,
-					adBreaks: [{
-							time: '0',
-							tag: {
-								url: TAG
-							}
-						}]
-				};
-				
-				playerOptions.ads = adsOptions;
+					jwplayer("jwPlayer-html").setup(options);
 
-				var player = varrandoPlayer.setup("varrandoPlayer", playerOptions);
-				player.on('ready', function () {
-					console.log('HTML Player Ready');
-				});
+					options["primary"] = "flash";
+					jwplayer("jwPlayer-flash").setup(options);
 				
-				
-				//JW Player
-				var platform = "flash"; 	//html5 || flash
-				
-				var playerInstance = jwplayer("jwPlayer").setup({
-					file: "https://content.jwplatform.com/videos/Wf8BfcSt-kNspJqnJ.mp4",
-					image: "https://content.jwplatform.com/thumbs/Wf8BfcSt-640.jpg",
-					width: "500",
-					height: "232",
-					primary: platform,
-					autostart: "true",
-					mute: "true",
-					advertising: { 
-						client: "vast",
-						schedule: {"myAds":{"offset":"pre","tag":TAG}}
-					  }
-					});
 				}
         </script>
     </body>
