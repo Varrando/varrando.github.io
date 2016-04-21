@@ -10,7 +10,7 @@
                     <Linear>
                         <Duration>00:00:15</Duration>
                         <MediaFiles>
-                            <MediaFile delivery="progressive" width="16" height="9" type="application/javascript" apiFramework="VPAID"><![CDATA[https://s-static.innovid.com/mobileapps/s/js/vpaid/1hm14o?cb=9886d020-afff-dd85-7c14-42a2ef36d24a&deviceid=]]></MediaFile>
+                            <MediaFile delivery="progressive" bitrate="466" width="300" height="224" type="video/mp4" scalable="true" maintainAspectRatio="true"><![CDATA[http://cdn.jivox.com/21411/WP1_13890_21411_32251.mp4]]></MediaFile>
                         </MediaFiles>
                     </Linear>
                 </Creative>
