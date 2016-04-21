@@ -59,7 +59,7 @@
 					<CompanionAds>
 						<Companion id="mobileBanner728X90" width="728" height="90">
 							<StaticResource creativeType="image/jpeg">
-								<![CDATA[https://varrando.github.io/jw-varrando-player-demo/tests/companions/assets/companion_728x90.png]]>
+								<![CDATA[http://cdn.jivox.com/21411/13890-0-pro-4da4d96eb237c.png]]>
 							</StaticResource>
 							<TrackingEvents>
 								<Tracking event="creativeView">
@@ -72,7 +72,7 @@
 						</Companion>
 						<Companion id="skyscraper" width="160" height="600">
 							<StaticResource creativeType="image/jpeg">
-								<![CDATA[https://varrando.github.io/jw-varrando-player-demo/tests/companions/assets/companion_160x600.png]]>
+								<![CDATA[http://cdn.jivox.com/21411/8224-pro-4d06b6a6dadb0.png]]>
 							</StaticResource>
 							<TrackingEvents>
 								<Tracking event="creativeView">
