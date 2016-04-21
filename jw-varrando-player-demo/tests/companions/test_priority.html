@@ -35,14 +35,13 @@
 
         <script type="text/javascript">
 			window.onload = onLoad;
-        	
-        	var varrandoPlayer = window.evsPlayer || {};
-        	var players = varrandoPlayer.players || {};
-        	
 			//vast tag
 			var TAG = "./test_priority/wrapper1.xml";
 			
 			function onLoad() {
+
+				var varrandoPlayer = window.evsPlayer || {};
+	        	var players = varrandoPlayer.players || {};
 
 				for (var player_id in players) {
 				  if (!players.hasOwnProperty(player_id)) {
