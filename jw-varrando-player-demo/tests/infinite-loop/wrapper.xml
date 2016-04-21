@@ -3,7 +3,7 @@
     <Ad id="start1-w1">
         <Wrapper followAdditonalWrappers="false" allowMultipleAds="true" fallbackOnNoAd="true">
             <AdSystem>GDFP</AdSystem>
-            <VASTAdTagURI><![CDATA[./wrapper.xml]]></VASTAdTagURI>
+            <VASTAdTagURI><![CDATA[https://varrando.github.io/jw-varrando-player-demo/tests/infinite-loop/wrapper.xml]]></VASTAdTagURI>
         </Wrapper>
     </Ad>
 </VAST>
