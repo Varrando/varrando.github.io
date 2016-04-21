@@ -29,3 +29,12 @@ header {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+.companionWrapper { 
+    width: 730px; 
+    margin-top: 10px;
+}
+.companion {
+    border: 1px #dddddd dashed; 
+    float:left;
+}

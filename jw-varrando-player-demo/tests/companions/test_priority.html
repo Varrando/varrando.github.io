@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script type="text/javascript" src="https://content.jwplatform.com/libraries/V6NfEzT7.js"></script>
+        <title>Test Companions Priority Demo</title>
+        <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    </head>
+    <body>
+		<div id="varrando" class="wrapper">
+			<header>Varrando Player</header>
+			<div id="varrandoPlayer" class="centered">
+				<script src="//content.varrando.com/embed/supply/cZzV3rFmaU.js" id="cZzV3rFmaU" async></script>
+			</div>
+			<div class="companionWrapper">
+				<!-- leader-board -->
+				<div id="slot728x90" style="width: 728px; height:90px;" class="companion"></div>
+				<!-- wide skyscraper -->
+				<div id="slot160x600" style="width: 160px; height: 600px;" class="companion"></div>
+				<!-- medium rectangle -->
+				<div id="slot300x250" style="width: 300px; height: 250px;" class="companion"></div>
+				<!-- mobile banner -->
+				<div id="slot320x50" style="width: 320px; height: 50px;" class="companion"></div> 
+			</div>
+		</div>
+		<div id="jw" class="wrapper">
+			<header>JW Player</header>
+			<div id="jwPlayer" class="centered"></div>
+			<div class="companionWrapper">
+				<div class="companion" id="slot1" style="width:728px; height:90px;">&nbsp;</div>
+				<div class="companion" id="slot2" style="width:160px; height:600px;">&nbsp;</div>
+				<div class="companion" id="slot4" style="width:300px; height:250px;">&nbsp;</div>
+				<div class="companion" id="slot3" style="width:320px; height:50px;">&nbsp;</div>
+			</div>
+		</div>
+
+        <script type="text/javascript">
+			window.onload = onLoad;
+        	
+        	var varrandoPlayer = window.evsPlayer || {};
+        	var players = varrandoPlayer.players || {};
+        	
+			//vast tag
+			var TAG = "./test_priority/wrapper1.xml";
+			
+			function onLoad() {
+
+				for (var player_id in players) {
+				  if (!players.hasOwnProperty(player_id)) {
+				    continue;
+				  }
+
+				  var player = players[player_id];
+				  player.defineSlot('slot728x90', 728, 90);
+				  player.defineSlot('slot300x250', 300, 250);
+				  player.defineSlot('slot320x50', 320, 50);
+				  player.defineSlot('slot160x600', 160, 600);
+				}
+
+				//JW Player
+				var platform = "flash"; 	//html5 || flash
+				
+				var playerInstance = jwplayer("jwPlayer").setup({
+					file: "../../videos/fashion.mp4",
+					image: "https://content.jwplatform.com/thumbs/Wf8BfcSt-640.jpg",
+					width: "500",
+					height: "232",
+					primary: platform,
+					autostart: "true",
+					mute: "true",
+					advertising: { 
+						client: "vast",
+						schedule: {"myAds":{"offset":"pre","tag":TAG}}
+					  }
+					});
+					
+				playerInstance.on('adCompanions', function(event) {
+				  for(var i = 0; i < event.companions.length; i++) {
+					var entry = event.companions[i];
+					if(entry.width == 728) {
+					  insertAd("slot1", entry.resource);
+					} else if(entry.width == 160) {
+					  insertAd("slot2", entry.resource);
+					} else if(entry.height == 32) {
+					  insertAd("slot3", entry.resource);
+					} else if(entry.height == 250) {
+					  insertAd("slot4", entry.resource);
+					}
+				  }
+				});
+
+				function insertAd(element,resource) {
+				  var div = document.getElementById(element);
+				  div.style.backgroundImage = "url("+resource+")";
+				  div.style.backgroundRepeat = "no-repeat";
+				  div.style.backgroundSize = "cover";
+				}
+				
+				}
+        </script>
+    </body>
+</html>
