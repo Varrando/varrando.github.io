@@ -38,6 +38,10 @@ header {
     float:left;
 }
 
+.error{
+    color: red;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
     .wrapper{
         width: 100%;
