@@ -7,13 +7,13 @@
     </head>
     <body>
 		<div id="varrando" class="wrapper">
-			<header>Varrando Player: Plays the standalone ad for Ad Pod slot 1 fill</header>
+			<header>Varrando Player: Plays the standalone ad for Ad Pod fill</header>
 			<div id="varrandoPlayer" class="centered">
 				<script src="//content.varrando.com/embed/supply/AroKdYxS9f.js" id="AroKdYxS9f" async></script>
 			</div>
 		</div>
 		<div id="jw" class="wrapper">
-			<header>JW Player: Ad Error. Does not play any ads</header>
+			<header>JW Player:  <span class="error">Ad Error.</span> Does not play any ads</header>
 			<div id="jwPlayer" class="centered"></div>
 		</div>
 
@@ -21,13 +21,15 @@
 			window.onload = onLoad;
 			//vast tag
 			var TAG = "./test_fona/wrapper1.xml";
+			var videoURL = "https://d4lbbaqo6llx7.cloudfront.net/jwtest/fashion.mp4?Expires=1492897346&Signature=ZPnyMEg0Wr1vhjI1HBjfVEItmadtvjwPBT5UF5IuwnWxIuC8yDhYrXZpsoN9gSeHBgpb3z27xpdWyLFVz8NhE--V96xmyuhmpl2O6Stv5uH~0aDgMa03mJ70APdG3wPMVyUCWQ4aMDLbSpFbJP6CmLD1eBGaNRLuf-bNtmzqFqQyurGP8XubBVeFPV4O7rgvWQQqiqFDYEWGOImpynpFtWTtNJvYauPqANo7n8Clw7UGeup-sDE~TgVFAW5I0BsIQ8a3xdQBtgtwnnAEXgGZDbnlaLNLgxh3GH491IdfLprU-rJLiUvxD0ROWKe5QjuQnVmWEfOArS522itGRC1PZQ__&Key-Pair-Id=APKAIKTZFLHBLQRVVEWA";
+
 			
 			function onLoad() {
 				//JW Player
 				var platform = "flash"; 	//html5 || flash
 				
 				var playerInstance = jwplayer("jwPlayer").setup({
-					file: "../../videos/fashion.mp4",
+					file: videoURL,
 					image: "https://content.jwplatform.com/thumbs/Wf8BfcSt-640.jpg",
 					width: "500",
 					height: "232",
