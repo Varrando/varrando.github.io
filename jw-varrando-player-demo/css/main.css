@@ -42,15 +42,29 @@ header {
     color: red;
 }
 
+.help-notice{
+    display: none;
+    text-align: center;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
     .wrapper{
         width: 100%;
     }
-}
 
+    .help-notice{
+        display: block;
+    }
+}
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 979px) {
     .wrapper{
         width: 100%;
     }
+
+    .help-notice{
+        display: block;
+    }
 }
+
+
