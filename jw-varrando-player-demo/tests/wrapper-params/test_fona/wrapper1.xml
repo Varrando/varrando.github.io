@@ -9,7 +9,7 @@
 	       <Creatives>
 	        <Creative sequence="1">
 	          <Linear skipoffset="00:00:03">
-       	     <Duration>00:00:30</Duration>
+       	     <Duration>00:00:15</Duration>
 	            <TrackingEvents>
 	              <Tracking event="start">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
 	              <Tracking event="firstQuartile">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
@@ -25,7 +25,7 @@
 	              <ClickTracking>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</ClickTracking>
 	            </VideoClicks>
 	            <MediaFiles>
-	              <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="400" width="640" height="360">http://speed.pointroll.com/pointroll/media/asset/ChattemIcyHot/213805/CTIHTT30B00H_Quotes_Non-Slated%20(BrightRoll)_768x432_700kbps_30secs.mp4</MediaFile>
+	              <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="400" width="640" height="360">http://cdn.jivox.com/21411/WP1_13890_21411_32251.mp4</MediaFile>
 	            </MediaFiles>
 	          </Linear>
 	        </Creative>
