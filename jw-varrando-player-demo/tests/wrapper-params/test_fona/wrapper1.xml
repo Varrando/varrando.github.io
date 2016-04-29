@@ -21,7 +21,7 @@
 	              <Tracking event="fullscreen">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
 	            </TrackingEvents>
 	            <VideoClicks>
-	              <ClickThrough><![CDATA[http://www.adotube.com/]]></ClickThrough>
+	              <ClickThrough><![CDATA[https://varrando.com/]]></ClickThrough>
 	              <ClickTracking>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</ClickTracking>
 	            </VideoClicks>
 	            <MediaFiles>
@@ -60,7 +60,7 @@
             </TrackingEvents>
             <AdParameters></AdParameters>
             <VideoClicks>
-              <ClickThrough>https://www.jwplayer.com/video-ads/</ClickThrough>
+              <ClickThrough>https://varrando.com/</ClickThrough>
               <ClickTracking>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</ClickTracking>
             </VideoClicks>
             <MediaFiles>
