@@ -20,7 +20,13 @@ body {
     margin-bottom: 10px;
 }
 
-.e-player, .varrando-wrapper .var-player, #varrandoPlayer, #jwPlayer-html, #jwPlayer-flash, #jwPlayer {
+.varrando-wrapper .var-player, 
+#varrando .var-player,
+#varrandoPlayer, 
+#jwPlayer-html, 
+#jwPlayer-flash, 
+#jwPlayer,
+.e-player {
     margin: 0px auto;
 }
 
