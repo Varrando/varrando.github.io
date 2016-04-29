@@ -20,7 +20,7 @@ body {
     margin-bottom: 10px;
 }
 
-.e-player, #varrandoPlayer, #jwPlayer-html, #jwPlayer-flash, #jwPlayer {
+.e-player, .varrando-wrapper .var-player, #varrandoPlayer, #jwPlayer-html, #jwPlayer-flash, #jwPlayer {
     margin: 0px auto;
 }
 

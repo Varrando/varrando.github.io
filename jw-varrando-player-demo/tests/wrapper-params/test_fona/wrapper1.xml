@@ -4,25 +4,25 @@
         <InLine>
       	 	<AdSystem version="2.0">JW Player</AdSystem>
       		<AdTitle>Static Tag</AdTitle>
-      		<Error>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif?err=[ERRORCODE]</Error>
-		<Impression>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Impression>
+      		<Error>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif?err=[ERRORCODE]</Error>
+		      <Impression>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Impression>
 	       <Creatives>
 	        <Creative sequence="1">
 	          <Linear skipoffset="00:00:03">
        	     <Duration>00:00:15</Duration>
 	            <TrackingEvents>
-	              <Tracking event="start">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-	              <Tracking event="firstQuartile">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-	              <Tracking event="midpoint">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-	              <Tracking event="thirdQuartile">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-	              <Tracking event="complete">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-	              <Tracking event="pause">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-	              <Tracking event="mute">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-	              <Tracking event="fullscreen">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
+	              <Tracking event="start">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+	              <Tracking event="firstQuartile">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+	              <Tracking event="midpoint">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+	              <Tracking event="thirdQuartile">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+	              <Tracking event="complete">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+	              <Tracking event="pause">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+	              <Tracking event="mute">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+	              <Tracking event="fullscreen">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
 	            </TrackingEvents>
 	            <VideoClicks>
 	              <ClickThrough><![CDATA[https://varrando.com/]]></ClickThrough>
-	              <ClickTracking>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</ClickTracking>
+	              <ClickTracking>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</ClickTracking>
 	            </VideoClicks>
 	            <MediaFiles>
 	              <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="400" width="640" height="360">http://cdn.jivox.com/21411/WP1_13890_21411_32251.mp4</MediaFile>
@@ -34,7 +34,7 @@
     </Ad>
     <Ad id="start2-w1" sequence="1">
         <Wrapper followAdditonalWrappers="false" allowMultipleAds="false" fallbackOnNoAd="true">
-            <AdSystem>GDFP</AdSystem>
+            <AdSystem>Varrando</AdSystem>
             <VASTAdTagURI><![CDATA[https://varrando.github.io/jw-varrando-player-demo/tests/wrapper-params/test_fona/noad.xml]]></VASTAdTagURI>
         </Wrapper>
     </Ad>
@@ -42,26 +42,26 @@
         <InLine>
       <AdSystem version="2.0">JW Player</AdSystem>
       <AdTitle>Static Tag</AdTitle>
-      <Error>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif?err=[ERRORCODE]</Error>
-      <Impression>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Impression>
+      <Error>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif?err=[ERRORCODE]</Error>
+      <Impression>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Impression>
       <Creatives>
         <Creative sequence="1">
           <Linear skipoffset="00:00:03">
             <Duration>00:00:15</Duration>
             <TrackingEvents>
-              <Tracking event="start">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-              <Tracking event="firstQuartile">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-              <Tracking event="midpoint">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-              <Tracking event="thirdQuartile">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-              <Tracking event="complete">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-              <Tracking event="pause">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-              <Tracking event="mute">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
-              <Tracking event="fullscreen">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</Tracking>
+              <Tracking event="start">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+              <Tracking event="firstQuartile">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+              <Tracking event="midpoint">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+              <Tracking event="thirdQuartile">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+              <Tracking event="complete">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+              <Tracking event="pause">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+              <Tracking event="mute">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
+              <Tracking event="fullscreen">https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Tracking>
             </TrackingEvents>
             <AdParameters></AdParameters>
             <VideoClicks>
               <ClickThrough>https://varrando.com/</ClickThrough>
-              <ClickTracking>https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif</ClickTracking>
+              <ClickTracking>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</ClickTracking>
             </VideoClicks>
             <MediaFiles>
               <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="400" width="640" height="360">https://s3.amazonaws.com/demo.jwplayer.com/static-tag/ova.mp4</MediaFile>

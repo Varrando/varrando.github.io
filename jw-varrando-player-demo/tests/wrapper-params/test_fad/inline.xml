@@ -2,7 +2,7 @@
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
     <Ad id="1hm14o">
         <InLine>
-            <AdSystem>Innovid Ads</AdSystem>
+            <AdSystem>Varrando</AdSystem>
             <AdTitle><![CDATA[Mobile Video QA]]></AdTitle>
             <Impression><![CDATA[about:blank]]></Impression>
             <Creatives>

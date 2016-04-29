@@ -2,7 +2,7 @@
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0">
     <Ad id="start1-w1">
         <Wrapper followAdditonalWrappers="false" allowMultipleAds="false" fallbackOnNoAd="true">
-            <AdSystem>GDFP</AdSystem>
+            <AdSystem>Varrando</AdSystem>
             <VASTAdTagURI><![CDATA[https://varrando.github.io/jw-varrando-player-demo/tests/companions/test_priority/inline.xml]]></VASTAdTagURI>
         </Wrapper>
     </Ad>

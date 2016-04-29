@@ -2,28 +2,28 @@
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
  <Ad id="1" sequence="1">
   <InLine>
-   <AdSystem>LKQD</AdSystem>
+   <AdSystem>Varrando</AdSystem>
    <AdTitle>Mobile Video QA</AdTitle>
-   <Error><![CDATA[http://t.lkqd.net/t?ev=17&env=1&pid=2&sid=71]]></Error>
-   <Impression><![CDATA[http://t.lkqd.net/t?ev=16&env=1&pid=2&sid=71]]></Impression>
+   <Error>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif?err=[ERRORCODE]</Error>
+   <Impression>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Impression>
    <Creatives>
     <Creative sequence="1">
      <Linear>
       <Duration>00:00:15</Duration>
       <TrackingEvents>
-       <Tracking event="start"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="firstQuartile"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="midpoint"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="thirdQuartile"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="complete"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="mute"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="unmute"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="pause"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="fullscreen"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
+       <Tracking event="start"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="firstQuartile"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="midpoint"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="thirdQuartile"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="complete"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="mute"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="unmute"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="pause"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="fullscreen"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
       </TrackingEvents>
       <VideoClicks>
        <ClickThrough><![CDATA[https://varrando.com/]]></ClickThrough>
-       <ClickTracking><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></ClickTracking>
+       <ClickTracking><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></ClickTracking>
       </VideoClicks>
       <MediaFiles>
        <MediaFile delivery="progressive" type="video/x-flv" bitrate="500" width="400" height="300" scalable="true" maintainAspectRatio="true"><![CDATA[http://cdnp.tremormedia.com/video/acudeo/Carrot_400x300_500kb.flv]]></MediaFile>
@@ -37,28 +37,28 @@
  </Ad>
  <Ad id="2" sequence="2">
   <InLine>
-   <AdSystem>LKQD</AdSystem>
+   <AdSystem>Varrando</AdSystem>
    <AdTitle>Mobile Video QA</AdTitle>
-   <Error><![CDATA[http://t.lkqd.net/t?ev=17&env=1&pid=2&sid=71]]></Error>
-   <Impression><![CDATA[http://t.lkqd.net/t?ev=16&env=1&pid=2&sid=71]]></Impression>
+   <Error>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif?err=[ERRORCODE]</Error>
+   <Impression>https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif</Impression>
    <Creatives>
     <Creative sequence="1">
      <Linear>
       <Duration>00:00:15</Duration>
       <TrackingEvents>
-       <Tracking event="start"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="firstQuartile"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="midpoint"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="thirdQuartile"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="complete"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="mute"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="unmute"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="pause"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
-       <Tracking event="fullscreen"><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></Tracking>
+       <Tracking event="start"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="firstQuartile"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="midpoint"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="thirdQuartile"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="complete"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="mute"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="unmute"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="pause"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
+       <Tracking event="fullscreen"><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></Tracking>
       </TrackingEvents>
       <VideoClicks>
        <ClickThrough><![CDATA[https://varrando.com/]]></ClickThrough>
-       <ClickTracking><![CDATA[http://t.lkqd.net/t?ev=18&env=1&pid=2&sid=71]]></ClickTracking>
+       <ClickTracking><![CDATA[https://d1vh8n1ucwcprn.cloudfront.net/pixel.gif]]></ClickTracking>
       </VideoClicks>
       <MediaFiles>
        <MediaFile delivery="progressive" bitrate="466" width="300" height="224" type="video/mp4" scalable="true" maintainAspectRatio="true"><![CDATA[http://cdn.jivox.com/21411/WP1_13890_21411_32251.mp4]]></MediaFile>
