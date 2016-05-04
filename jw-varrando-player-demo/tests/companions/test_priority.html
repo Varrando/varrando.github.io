@@ -4,6 +4,27 @@
 		<script type="text/javascript" src="https://content.jwplatform.com/libraries/V6NfEzT7.js"></script>
         <title>Test Companions Priority Demo</title>
         <link rel="stylesheet" type="text/css" href="../../css/main.css">
+        <script type="text/javascript">
+        	window.varPlayer = window.varPlayer || {};
+			window.varPlayer.slots = [{
+                    elemId: 'slot728x90',
+                    width: 728,
+                    height: 90
+                }, {
+                    elemId: 'slot300x250',
+                    width: 300,
+                    height: 250
+                }, {
+                    elemId: 'slot320x50',
+                    width: 320,
+                    height: 50
+                }, {
+                    elemId: 'slot160x600',
+                    width: 160,
+                    height: 600
+                }
+            ];
+        </script>
     </head>
     <body>      
         <h4 style="text-align: center;">Press Play on both players to view selected companions </h4>
@@ -57,7 +78,7 @@
 					width: "500",
 					height: "281",
 					primary: platform,
-					autostart: "false",
+					autostart: "true",
 					mute: "true",
 					advertising: { 
 						client: "vast",
@@ -85,27 +106,8 @@
 
 			
 			function onLoad() {
-				loadVarrando();
 				loadJWPlayer();
 			}
-
-			function loadVarrando() {
-
-				var varrandoPlayer = window.evsPlayer || {};
-	        	var players = varrandoPlayer.players || {};
-	        	var playerName = "player_cZzV3rFmaU";
-	        	
-	        	if (!players.hasOwnProperty(playerName)) {
-				    return;
-				}
-
-				var player = players[playerName];
-				 
-			  	player.defineSlot('slot728x90', 728, 90);
-			  	player.defineSlot('slot300x250', 300, 250);
-			  	player.defineSlot('slot320x50', 320, 50);
-			  	player.defineSlot('slot160x600', 160, 600);
-		   }
         </script>
     </body>
 </html>
